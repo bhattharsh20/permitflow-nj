@@ -6,8 +6,8 @@ from supabase import create_client
 st.set_page_config(page_title="PermitFlow NJ - Deal Scout", layout="wide")
 
 # 1. Configuration & Keys
-SUPABASE_URL = st.secrets["https://skwrstisakfwcmxcvpxh.supabase.co"]
-UPABASE_KEY = st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNrd3JzdGlzYWtmd2NteGN2cHhoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4MjgzMzI1OSwiZXhwIjoyMDk4NDA5MjU5fQ.3w6LL06XyG8qu8yh2zhtp9GtAdTNAV53r2Qz45mY2jg"]
+SUPABASE_URL = st.secrets["SUPABASE_URL"]
+SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 
 @st.cache_resource
 def init_supabase():
